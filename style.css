@@ -1,0 +1,40 @@
+/* 작성일: 2026-09-30 11:50 (KST) */
+/* 수정일: 2026-09-30 12:00 (KST) */
+
+/* 페이지 전체 배경 (카드 바깥쪽): 아주 연한 웜그레이 */
+html {
+  background-color: #F2F2F0;
+}
+
+/* 4. 본문을 카드처럼: padding + 배경색 */
+body {
+  max-width: 600px;            /* 카드 너비 */
+  margin: 40px auto;           /* 위아래 40px, 가운데 정렬 */
+  padding: 30px;               /* 카드 안쪽 여백 */
+  background-color: #FFFFFF;   /* 카드 배경색 */
+  border: 1px solid #E4E4E1;   /* 얇은 회색 테두리 */
+  border-radius: 12px;         /* 모서리 둥글게 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* 아주 옅은 그림자 */
+  color: #4A4A48;              /* 본문 글자: 부드러운 회색 */
+}
+
+/* 3. 제목(h1)에 색상과 글꼴 크기 */
+h1 {
+  color: #2F2F2E;              /* 차콜 그레이 */
+  font-size: 36px;
+}
+
+/* 5. 좋아하는 것 목록을 Flexbox로 가로 정렬 */
+ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;   /* 앞의 점(•) 없애기 */
+  padding: 0;
+}
+
+li {
+  padding: 8px 14px;
+  background-color: #EDEDEB;   /* 연한 회색 태그 */
+  color: #3A3A38;
+  border-radius: 20px;
+}
