@@ -1,42 +1,39 @@
 <html>
 <body>
     <form>
-        <!-- 사용자가 입력하는 입력 양식 -->
-        <input type="text" name="text" value="text"><br>
-        <input type="password" name="password" value="password"><br>
-        <input type="file" name="file"><br>
-        <input type="checkbox" name="checkbox" value="checkbox"><br>
-        <input type="radio" name="radio" value="radio"><br>
+        <!-- 이름 입력 -->
+        <p>이름을 입력하세요.</p>
+        <input type="text" name="name"><br>
 
-        <!-- 보이지 않는 입력 양식 -->
-        <input type="hidden" name="hidden" value="hidden"><br>
+        <!-- 학년 선택 -->
+        <p>현재 몇 학년인가요?</p>
+        <input type="radio" name="grade" value="1학년">1학년
+        <input type="radio" name="grade" value="2학년">2학년
+        <input type="radio" name="grade" value="3학년">3학년
+        <input type="radio" name="grade" value="4학년">4학년<br>
 
-        <!-- 버튼 -->
-        <input type="button" value="button"><br>
-        <input type="reset" value="reset"><br>
-        <input type="submit" value="submit"><br>
-        <input type="image" src="https://via.placeholder.com/100x100" alt="submit">
+        <!-- 하루 평균 수면 시간 -->
+        <p>하루 평균 수면 시간은 얼마인가요?</p>
+        <input type="radio" name="sleep" value="4시간 미만">4시간 미만
+        <input type="radio" name="sleep" value="4~6시간">4~6시간
+        <input type="radio" name="sleep" value="6~7시간">6~7시간
+        <input type="radio" name="sleep" value="7~9시간">7~9시간
+        <input type="radio" name="sleep" value="9시간 이상">9시간 이상<br>
 
-        <hr>
+        <!-- 수면 부족의 원인 -->
+        <p>수면 부족의 원인은 무엇인가요?</p>
+        <input type="checkbox" name="cause" value="과제">과제 및 시험
+        <input type="checkbox" name="cause" value="스마트폰">스마트폰 사용
+        <input type="checkbox" name="cause" value="아르바이트">아르바이트
+        <input type="checkbox" name="cause" value="스트레스">스트레스
+        <input type="checkbox" name="cause" value="기타">기타<br>
 
-        <!-- 드롭다운 메뉴 -->
-        <select name="food">
-            <option>김밥</option>
-            <option>떡볶이</option>
-            <option>순대</option>
-            <option>어묵</option>
-        </select><br>
+        <!-- 건강한 수면 습관에 대한 의견 -->
+        <p>건강한 수면 습관을 위해 필요한 것은 무엇인가요?</p>
+        <textarea name="opinion" rows="5" cols="40"></textarea><br>
 
-        <!-- 수면 시간 드롭다운 -->
-        <select name="sleep">
-            <option>4시간 미만</option>
-            <option>4시간 이상~6시간 미만</option>
-            <option>6시간 이상~7시간 미만</option>
-            <option>7시간 이상~9시간 미만</option>
-            <option>9시간 이상</option>
-        </select><br>
-
-        <!-- 취침 시간 드롭다운 -->
+        <!-- 드롭다운: 취침 시간 -->
+        <p>평소 잠자리에 드는 시간은 언제인가요?</p>
         <select name="bedtime">
             <option>밤 10시 이전</option>
             <option>밤 10시~자정 이전</option>
@@ -44,6 +41,21 @@
             <option>새벽 2시~4시 이전</option>
             <option>새벽 4시 이후</option>
         </select><br>
+
+        <!-- 드롭다운: 수면 만족도 -->
+        <p>평소 자신의 수면의 질에 얼마나 만족하시나요?</p>
+        <select name="satisfaction">
+            <option>매우 만족한다</option>
+            <option>만족하는 편이다</option>
+            <option>보통이다</option>
+            <option>불만족하는 편이다</option>
+            <option>매우 불만족한다</option>
+        </select><br>
+
+        <!-- 제출 및 초기화 버튼 -->
+        <br>
+        <input type="submit" value="제출하기">
+        <input type="reset" value="다시 작성하기">
     </form>
 </body>
 </html>
