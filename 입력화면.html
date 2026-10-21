@@ -1,39 +1,49 @@
 <html>
 <body>
     <form>
-        <!-- 학년 선택 -->
-        <p>현재 몇 학년인가요?</p>
-        <select name="grade">
-            <option>1학년</option>
-            <option>2학년</option>
-            <option>3학년</option>
-            <option>4학년</option>
-            <option>5학년 이상</option>
-        </select>
+        <!-- 사용자가 입력하는 입력 양식 -->
+        <input type="text" name="text" value="text"><br>
+        <input type="password" name="password" value="password"><br>
+        <input type="file" name="file"><br>
+        <input type="checkbox" name="checkbox" value="checkbox"><br>
+        <input type="radio" name="radio" value="radio"><br>
 
-        <br><br>
+        <!-- 보이지 않는 입력 양식 -->
+        <input type="hidden" name="hidden" value="hidden"><br>
 
-        <!-- 수면 시간 선택 -->
-        <p>하루 평균 수면 시간은 얼마인가요?</p>
+        <!-- 버튼 -->
+        <input type="button" value="button"><br>
+        <input type="reset" value="reset"><br>
+        <input type="submit" value="submit"><br>
+        <input type="image" src="https://via.placeholder.com/100x100" alt="submit">
+
+        <hr>
+
+        <!-- 드롭다운 메뉴 -->
+        <select name="food">
+            <option>김밥</option>
+            <option>떡볶이</option>
+            <option>순대</option>
+            <option>어묵</option>
+        </select><br>
+
+        <!-- 수면 시간 드롭다운 -->
         <select name="sleep">
             <option>4시간 미만</option>
             <option>4시간 이상~6시간 미만</option>
             <option>6시간 이상~7시간 미만</option>
             <option>7시간 이상~9시간 미만</option>
             <option>9시간 이상</option>
-        </select>
+        </select><br>
 
-        <br><br>
-
-        <!-- 취침 시간 선택 -->
-        <p>평소 잠자리에 드는 시간은 언제인가요?</p>
+        <!-- 취침 시간 드롭다운 -->
         <select name="bedtime">
             <option>밤 10시 이전</option>
             <option>밤 10시~자정 이전</option>
             <option>자정~새벽 2시 이전</option>
             <option>새벽 2시~4시 이전</option>
             <option>새벽 4시 이후</option>
-        </select>
+        </select><br>
     </form>
 </body>
 </html>
